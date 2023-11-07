@@ -6,6 +6,9 @@
 
 /* GENERAL */
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 
 /* UTILITIES */
 
@@ -19,6 +22,16 @@
 
 .left {
     text-align:left;
+}
+
+.white {
+    color:white;
+}
+
+.upper {
+    text-transform:uppercase;
+    font-size:12px;
+    font-weight:bold;
 }
 
 /* LAYOUT & COLUMNS */
@@ -39,6 +52,14 @@
 .col-100 {
     width:100%;
     margin:10px 0px;
+}
+
+.col-25 {
+    width:25%;
+}
+
+.col-50 {
+    width:50%;
 }
 
 /* TOP  */
@@ -68,18 +89,27 @@
     display:flex;
     flex-direction:column;
     flex-wrap:nowrap;
+    font-size:12px;
+    color:#a3a3a3;
 }
 
 #sidebar .logo {
-    height:30px;
-    border:1px solid white;
     width:100%;
-    margin:20px 0;
+}
+
+#sidebar .logo img {
+    width:70%;
 }
 
 #sidebar .icone-nav {
-    border:1px solid white;
     width:100%;
+    margin:15px 0;
+}
+
+#sidebar .icone-nav img {
+    width:25px;
+    vertical-align:middle;
+    filter:opacity(0.7);
 }
 
 #sidebar #home, #cerca, #libreria {
@@ -87,13 +117,17 @@
 }
 
 #sidebar .playlist {
-    border:1px solid white;
     width:100%;
-    margin:20px 0;
 }
 
 #sidebar .playlist .crea {
-  
+    margin:10px 0;
+}
+
+#sidebar .playlist .plus {
+    vertical-align: middle;
+    display: inline;
+    margin-right:10px;
 }
 
 #sidebar .playlist .lista {
@@ -104,12 +138,34 @@
     list-style-type: none;
 }
 
+#sidebar li {
+    margin:15px 0;
+}
+
 #sidebar .fine-colonna {
     margin-top:auto;
 }
 
 #sidebar .installa {
     width:100%;
+    border-bottom:1px solid #a3a3a3;
+    padding-bottom:7px;
+    margin-bottom:7px;
+}
+
+#sidebar .user .profile {
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    background-color: #a3a3a3;
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:5px;
+}
+
+#sidebar .user .profile img {
+    width:70%;
+    margin-left:3px;
 }
 
 #sidebar .content-mobile {
@@ -176,7 +232,12 @@ nav li {
 /* FOOTER  */
 
 footer {
+    padding:20px;
+}
 
+footer .content {
+    background-color:antiquewhite;
+    height:50px;
 }
 
 
