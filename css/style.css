@@ -3,3 +3,74 @@
     padding:0;
     box-sizing: border-box;
 }
+
+/* GENERAL */
+
+
+/* UTILITIES */
+
+/* LAYOUT & COLUMNS */
+
+.row {
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.col-6 {
+    width:calc(100% / 6 - 20px);
+    margin:10px;
+    height:150px;
+    background-color:goldenrod;
+}
+
+/* TOP  */
+
+#top {
+    height:calc(100vh - 70px);
+    background-color: bisque;
+}
+
+.top-container {
+    height:100%;
+    display:flex;
+}
+
+/* SIDEBAR  */
+
+#sidebar {
+    width:300px;
+    background-color: black;
+}
+
+/* PARTE CENTRALE */
+
+#center-content {
+    width:calc(100vw - 300px);
+    background-color:red;
+}
+
+/* HEADER  */
+
+header {
+    width:calc(100vw - 300px);
+    height:70px;
+    background-color: bisque;
+}
+
+/* MAIN CONTENT  */
+
+.main-content {
+    width:calc(100vw - 300px);
+    height:calc(100% - 70px);
+    background-color: brown;
+}
+
+/* BOTTOM  */
+
+#bottom { 
+    height:70px;
+    background-color: grey;
+}
+
+/* FOOTER  */
