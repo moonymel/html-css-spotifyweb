@@ -57,7 +57,7 @@
     color:white;
 }
 
-#sidebar .content {
+#sidebar .content-desk {
     height:100%;
     position:relative;
     display:flex;
@@ -92,8 +92,7 @@
 }
 
 #sidebar .playlist .lista {
-    max-height:300px;
-    overflow:auto;
+
 }
 
 #sidebar ul {
@@ -106,6 +105,10 @@
 
 #sidebar .installa {
     width:100%;
+}
+
+#sidebar .content-mobile {
+    display:none;
 }
 
 /* PARTE CENTRALE */
@@ -173,4 +176,53 @@ footer {
 /* MOBILE: cambio sidebar  */
 @media screen and (max-width:480px) {
 
+    /* SIDEBAR  */
+    #sidebar {
+        width:50px;
+        background-color: black;
+        padding:5px;
+        color:white;
+    }
+
+    #sidebar .content-desk {
+        display:none;
+    }
+
+    #sidebar .content-mobile {
+        height:100%;
+        display:flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        justify-content:space-between;
+    }
+
+    #sidebar .content-mobile #icona {
+        width:20px;
+        height:20px;
+        background-color: white;
+        margin:3px
+    }
+
+    /* PARTE CENTRALE */
+
+    #center-content {
+        width:calc(100vw - 50px);
+        background-color:red;
+    }
+
+    /* HEADER  */
+
+    header {
+        width:calc(100vw - 50px);
+        height:80px;
+        background-color: bisque;
+    }
+
+    /* MAIN CONTENT  */
+
+    .main-content {
+        width:calc(100vw - 50px);
+        height:calc(100% - 80px);
+        background-color: brown;
+    }
 }
