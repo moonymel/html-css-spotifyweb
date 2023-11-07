@@ -51,7 +51,7 @@
 /* SIDEBAR  */
 
 #sidebar {
-    width:250px;
+    width:230px;
     background-color: black;
     padding:15px;
     color:white;
@@ -114,22 +114,37 @@
 /* PARTE CENTRALE */
 
 #center-content {
-    width:calc(100vw - 250px);
+    width:calc(100vw - 230px);
     background-color:red;
 }
 
 /* HEADER  */
 
 header {
-    width:calc(100vw - 250px);
+    width:calc(100vw - 230px);
     height:80px;
     background-color: bisque;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+header .upgrade {
+    margin-right:10px;
+}
+
+header a {
+    text-decoration:none;
+    padding:5px 30px;
+    border:1px solid white;
+    color:white;
+    border-radius:50px;
 }
 
 /* MAIN CONTENT  */
 
 .main-content {
-    width:calc(100vw - 250px);
+    width:calc(100vw - 230px);
     height:calc(100% - 80px);
     background-color: brown;
 }
