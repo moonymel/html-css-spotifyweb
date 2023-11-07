@@ -36,6 +36,11 @@
     background-color:goldenrod;
 }
 
+.col-100 {
+    width:100%;
+    margin:10px 0px;
+}
+
 /* TOP  */
 
 #top {
@@ -181,15 +186,22 @@ footer {
 /* MONITOR-S: cambio cover(4 per riga) */
 @media screen and (max-width:991px) {
     
+    /* LAYOUT & COLUMNS  */
+    .col-6 {
+        width:calc(100% / 4 - 20px);
+    }
 }
 
 /* TABLET: cambio icone footer, cover(2 per riga) */
 @media screen and (max-width:768px) {
-    
+    /* LAYOUT & COLUMNS  */
+    .col-6 {
+        width:calc(100% / 2 - 20px);
+    }
 }
 
 /* MOBILE: cambio sidebar  */
-@media screen and (max-width:480px) {
+@media screen and (max-width:576px) {
 
     /* SIDEBAR  */
     #sidebar {
