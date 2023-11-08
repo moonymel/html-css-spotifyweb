@@ -299,14 +299,13 @@ nav li:first-child::after {
 /* FOOTER  */
 
 footer {
-    padding:20px;
+    padding:20px 0;
     font-size:11px;
     line-height:11px;
     color:#a3a3a3;
 }
 
 footer .content {
-    background-color:antiquewhite;
     height:50px;
 }
 
@@ -325,7 +324,7 @@ footer .content-flex .fav-fold {
 }
 
 footer .content-flex .song-playing img {
-    width:40px;
+    width:30px;
     vertical-align:middle;
 }
 
@@ -338,6 +337,23 @@ footer .content-flex .song-title {
     
 }
 
+footer .content .player-icon {
+    display:inline-block;
+    margin:0px 10px;
+}
+
+footer .content .player {
+    margin-top:5px;
+    font-size:10px;
+}
+
+footer .content .player-bar {
+    display:inline-block;
+    width:50%;
+    height:3px;
+    background-color:#5b5b5b;
+    margin:0px 10px;
+}
 
 /* MEDIA QUERY!!!!! */
 
