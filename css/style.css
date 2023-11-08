@@ -297,6 +297,10 @@ nav li:first-child::after {
     background-color:rgba(0, 0, 0, 0.6);
 }
 
+.main-content .circle-2 .album-hover {
+    border-radius: 50%;
+}
+
 .main-content .album-hover .play {
     position:absolute;
     top:50%;
