@@ -199,7 +199,7 @@ body {
 header {
     width:calc(100vw - 230px);
     height:80px;
-    background-color: bisque;
+    background-color: #080b12;
     display:flex;
     justify-content:flex-end;
     align-items:center;
@@ -211,6 +211,9 @@ header .upgrade {
 
 header a {
     text-decoration:none;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:12px;
     padding:5px 30px;
     border:1px solid white;
     color:white;
