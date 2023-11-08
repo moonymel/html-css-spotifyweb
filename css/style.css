@@ -81,6 +81,12 @@ h2 {
     width:25%;
 }
 
+.col-25-right {
+    width:25%;
+    display:flex;
+    justify-content:flex-end;
+}
+
 .col-50 {
     width:50%;
 }
@@ -305,6 +311,10 @@ footer {
     color:#a3a3a3;
 }
 
+footer .row {
+    align-items:center;
+}
+
 footer .content {
     height:50px;
 }
@@ -315,6 +325,14 @@ footer .content-flex {
     align-items:center;
     justify-content:space-between;
     flex-wrap:nowrap;
+}
+
+footer .content-right {
+    display:flex;
+    max-width:230px;
+    align-items:center;
+    flex-wrap:nowrap;
+    text-align:right;
 }
 
 
@@ -347,13 +365,27 @@ footer .content .player {
     font-size:10px;
 }
 
-footer .content .player-bar {
+footer .player-bar {
     display:inline-block;
     width:50%;
     height:3px;
     background-color:#5b5b5b;
     margin:0px 10px;
 }
+
+footer .content-right .player-icon {
+    display:inline-block;
+    margin:0px 5px;
+}
+
+footer .volume-bar {
+    display:inline-block;
+    width:100px;
+    height:3px;
+    background-color:#5b5b5b;
+    margin:0px 10px;  
+}
+
 
 /* MEDIA QUERY!!!!! */
 
