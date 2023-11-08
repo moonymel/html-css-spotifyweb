@@ -47,6 +47,10 @@ h2 {
     font-weight:bold;
 }
 
+.bold {
+    font-weight:bold;
+}
+
 .circle {
     border:1px solid #a3a3a3;
     border-radius:100%;
@@ -286,7 +290,7 @@ nav li:first-child::after {
 
 #bottom { 
     height:80px;
-    background-color: grey;
+    background-color: #282828;
     position:fixed;
     width:100%;
     z-index:3;
@@ -296,6 +300,9 @@ nav li:first-child::after {
 
 footer {
     padding:20px;
+    font-size:11px;
+    line-height:11px;
+    color:#a3a3a3;
 }
 
 footer .content {
@@ -303,6 +310,33 @@ footer .content {
     height:50px;
 }
 
+footer .content-flex {
+    display:flex;
+    max-width:230px;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:nowrap;
+}
+
+
+footer .content-flex .fav-fold {
+    font-size:15px;
+    letter-spacing:5px;
+}
+
+footer .content-flex .song-playing img {
+    width:40px;
+    vertical-align:middle;
+}
+
+footer .content-flex .song-title {
+    display:inline-block;
+    vertical-align:middle;
+}
+
+footer .content-flex .song-title {
+    
+}
 
 
 /* MEDIA QUERY!!!!! */
