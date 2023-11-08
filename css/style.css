@@ -34,6 +34,14 @@ body {
     font-weight:bold;
 }
 
+.circle {
+    border:1px solid #a3a3a3;
+    border-radius:100%;
+    display:inline-block;
+    padding:0px 3px;
+    margin-right:5px;
+}
+
 /* LAYOUT & COLUMNS */
 
 .row {
@@ -112,8 +120,14 @@ body {
     filter:opacity(0.7);
 }
 
-#sidebar #home, #cerca, #libreria {
+#sidebar #cerca, #libreria {
     margin:10px 0;
+}
+
+#sidebar #home {
+    border-left:3px solid #a7f62e;
+    padding:0px 10px;
+    margin-left:-15px;
 }
 
 #sidebar .playlist {
@@ -131,7 +145,8 @@ body {
 }
 
 #sidebar .playlist .lista {
-
+    height:30vh;
+    overflow-y:auto;
 }
 
 #sidebar ul {
@@ -153,7 +168,7 @@ body {
     margin-bottom:7px;
 }
 
-#sidebar .user .profile {
+#sidebar .profile {
     width:25px;
     height:25px;
     border-radius:50%;
@@ -163,7 +178,7 @@ body {
     margin-right:5px;
 }
 
-#sidebar .user .profile img {
+#sidebar .profile img {
     width:70%;
     margin-left:3px;
 }
@@ -208,6 +223,7 @@ header a {
     width:calc(100vw - 230px);
     height:calc(100% - 80px);
     background-color: brown;
+    overflow-y:auto;
 }
 
 nav ul {
@@ -284,11 +300,22 @@ footer .content {
         justify-content:space-between;
     }
 
-    #sidebar .content-mobile #icona {
-        width:20px;
-        height:20px;
-        background-color: white;
-        margin:3px
+    #sidebar .content-mobile img {
+        width:25px;
+        margin:2px 0;
+        filter:opacity(0.7);
+    }
+
+    #sidebar .content-mobile  #logo-s img {
+        filter:opacity(1);
+    }
+
+    #sidebar .fine-colonna-mobile .circle {
+        font-size:9px;
+    }
+
+    #sidebar .fine-colonna-mobile .profile img {
+        width:70%;
     }
 
     /* PARTE CENTRALE */
