@@ -254,6 +254,21 @@ nav li {
     line-height:40px;
 }
 
+nav li:first-child::after {
+    display:block;
+    clear:both;
+    content : "";
+    position: relative;
+    left    : 0;
+    bottom  : 0;
+    max-width:250px;
+    height  : 1px;
+    width   : 40%;
+    border-bottom:2px solid #a7f62e;
+    margin:0 auto;
+    margin-top:-5px;
+}
+
 .main-content .col-6 img {
     width:100%;
 }
